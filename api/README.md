@@ -52,7 +52,7 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
      when `docker-compose build` is run.
 
 ### TODO
-# Add Nginx support.
-# Add caching and optimize Celery tasks for better performance.
-# Make MySQL connection configurable from cfg file.
-# Add more configurability for IPs/ports 
+ - Add Nginx support.
+ - Add caching and optimize Celery tasks for better performance.
+ - Make MySQL connection configurable from cfg file.
+ - Add more configurability for IPs/ports 
