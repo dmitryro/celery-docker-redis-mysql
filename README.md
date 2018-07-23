@@ -44,5 +44,17 @@ In the middle section you'll see the form to check, on the left panel
 you'll get  the list of all the non-anagrams and the times when they were checked,
 on the right - all the anagrams that succeed along with times.
 
+See the GUI README file at
+[https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/gui].
+
+See the API README file at
+[https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/api].
+
+See the MySQL README file at
+[https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/mysql].
+
+See the Celery README file at
+[https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/celery].
+
 
 adapted from [https://github.com/itsrifat/flask-celery-docker-scale](https://github.com/itsrifat/flask-celery-docker-scale)
