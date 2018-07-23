@@ -24,9 +24,9 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
        Read all the records from MySQL database. Render them
        as JSON using Marchmallow module.
 
-   `/readbystate/<int:state_id>`   
-       Return all anagrams for state_id = 1 and all non-anagrams
-       for state_id = 0
+   `/readbystate/<int:valid>`   
+       Return all anagrams for valid = 1 and all non-anagrams
+       for valid = 0. 
 
    `/delete/<int:id>`
        Take a record id and remove it from MySQL database.
@@ -51,7 +51,7 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
 # Databases
    - `maindb` is the MySQL database used with SQLAlchemy to save records.
    - `Dockerfile` contains the settings for user credentials
-   - `schemas/schema.sql` contains the initial migration to create
+   - `mysql/schema/schema.sql` contains the initial migration to create
      when `docker-compose build` is run.
 
 ### TODO
