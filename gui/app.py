@@ -1,8 +1,6 @@
 from flask import Flask
 from flask import url_for
 from flask_bootstrap import Bootstrap
-from worker import celery
-import celery.states as states
 from flask import Flask, render_template, request
  
 
