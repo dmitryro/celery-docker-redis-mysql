@@ -17,7 +17,7 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
 
    `/anagram/<string:word_one>/<string:word_two>` 
        Takes to strings : `word_one` and `word_two`, places them
-       into Celery queue, waits for result, reads result and
+       into [Celery](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/celery-queue) queue, waits for result, reads result and
        returns back True if valid anagram, False otherwice.
 
    `/readall/`
@@ -56,9 +56,11 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
 
 ### TODO
  - Add Nginx support.
- - Add caching and optimize Celery tasks for better performance.
+ - Add caching and optimize
+   [Celery](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/celery-queue) tasks for better performance.
  - Make MySQL connection configurable from cfg file.
  - Add more configurability for IPs/ports 
  - Add better migrations for MySQL using SQLAlchemy.
- - Add more Celery tasks and outsource the logic from endpoints into tasks.
+ - Add more
+   [Celery](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/celery-queue) tasks and outsource the logic from endpoints into tasks.
 
