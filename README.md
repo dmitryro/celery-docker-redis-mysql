@@ -6,7 +6,7 @@ Celery queue, Redis, MySQL, Vue and simple microservice api
 ### Installation
 
 ```bash
-git clone https://github.com/dmitryro/sometests
+git clone https://github.com/dmitryro/celery-docker-redis-mysql
 ```
 
 ### Build & Launch
