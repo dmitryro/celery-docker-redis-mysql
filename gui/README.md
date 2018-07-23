@@ -22,8 +22,9 @@ structure:
    - index.html
 
 - routes
-   - /
-   - /home
+   - `/`
+   - `/home`
+
    Routes to display the GUI with form and two panels - anagrams and
    non-anagrams processed. 
 
