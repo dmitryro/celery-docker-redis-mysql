@@ -1,7 +1,7 @@
-# GUI compoment of the app - a helper GUI to be used with API
+# GUI compoment - a helper GUI to be used with API.
 
 Implemented using Flask and Vue2
-To use run 
+To use, run 
 ```
 docker-compose up -d --build
 ```
@@ -20,6 +20,26 @@ structure:
 
 - templates
    - index.html
+
+- routes
+   - /
+   - /home
+   Routes to display the GUI with form and two panels - anagrams and
+   non-anagrams processed. 
+
+# GUI
+The GUI has a form for two words. Initial Vue validation is done on the 
+front end layer to verify no empty anagrams provided `vue_app.js` has the 
+logic for this. Once a pair of string is validated as either anagram or 
+non-anagram, it's added to either left (non-anagrams) or the right (anagrams)
+panel. Each panel conains pairs previosly processed along with times when
+anagrams (non-anagrams) were processed. If the API returns true, the flashing
+notificiation (fading alert) is displayed as success, if false - fading alert
+is displayed for failure (the result of the back end call after the front
+end validation succeeds). More logic may be needed to perform different CRUD
+operations on anagrams and non-anagrams panels. Please see the structure in
+`templates/index.html` and related javascript Vue code in `vue_app.js`.
+ 
 
 The template index.html is a standard html template using Vue2 for interctivity
 and
