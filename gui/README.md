@@ -43,10 +43,9 @@ For more details on structure please see
 `templates/index.html` and related javascript Vue code in `vue_app.js`.
  
 
-The template index.html is a standard html template using Vue2 for interctivity
-and
-This will expose the Flask application's endpoints on port `5000` as well as a
-flower server for monitoring workers on port `5555`
+The template `index.html` is a standard html template using `Vue2` to add
+some  interactivity. It's default Jinja2 template with no sub-templates.
+Bootstrap is used for responsive layout.
 
 ### TODO
 - Add support for `webpack`, `yarn`, `npm` to use with `Vue`.
