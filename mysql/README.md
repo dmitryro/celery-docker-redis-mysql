@@ -9,5 +9,6 @@
 # Todo
    - Provide more configuration options.
    - Provide better migrations.
-
+   - Remove passwords and usernames from Dockerfile and 
+     make them configurable based on environment.
 
