@@ -9,14 +9,14 @@ and open browser at 0.0.0.0:5001
 
 # Static files
 
-Static files are located in `static` directory and have the following
+`Static files` are located in `static` directory and have the following
 structure:
 - static
--- js
---- vue_app.js
---- jquery_app.js
--- css
---- main.css
+- - js
+- - - vue_app.js
+- - - jquery_app.js
+- - css
+- - - main.css
 
 - templates
 - - index.html
