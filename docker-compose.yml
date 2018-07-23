@@ -1,0 +1,62 @@
+version: "3"
+services:
+  web:
+    container_name: api01
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+     - "5000:5000"
+    depends_on:
+      - redis
+      - mysql
+    volumes:
+      - './api/:/usr/app'
+
+  gui:
+    container_name: gui01
+    build:
+      context: ./gui
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+     - "5001:5001"
+    depends_on:
+      - redis
+    volumes:
+      - './api/:/usr/app'
+
+  mysql:
+    container_name: mysql01
+    build:
+      context: mysql/
+      dockerfile: Dockerfile
+    ports:
+      - '3308:3306/tcp'
+    volumes:
+      - './mysql/:/usr/app'
+
+
+  worker:
+    container_name: worker01
+    build:
+      context: celery-queue
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+
+  monitor:
+    container_name: monitor01
+    build:
+      context: celery-queue
+      dockerfile: Dockerfile
+    ports:
+     - "5555:5555"
+    entrypoint: flower
+    command:  -A tasks --port=5555 --broker=redis://redis:6379/0
+    depends_on:
+      - redis
+
+  redis:
+    image: redis

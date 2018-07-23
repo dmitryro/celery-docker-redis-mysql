@@ -1,0 +1,19 @@
+.error {
+   display:inline;
+   color:red;
+}
+
+.success {
+   display:inline;
+   color:green;
+}
+
+.default-message {
+   display:inline;
+   line-height:1.4em;
+   font-size:1.2em;
+}
+
+.anagrams-list {
+  margin:1.3em 1.3em 1.0em 1.3em;
+}
