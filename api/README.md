@@ -21,7 +21,8 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
        returns back True if valid anagram, False otherwice.
 
    `/readall/`
-       Read all the records from MySQL database. Render them
+       Read all the records from
+[MySQL](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/mysql) database. Render them
        as JSON using Marchmallow module.
 
    `/readbystate/<int:valid>`   
@@ -29,7 +30,8 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
        for valid = 0. 
 
    `/delete/<int:id>`
-       Take a record id and remove it from MySQL database.
+       Take a record id and remove it from
+[MySQL](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/mysql) database.
 
    `/check/<string:task_id>`
        Provide a task ID and read task status - helper endpoint.
@@ -49,7 +51,8 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
    - Schemas: RecordSchema created out of Record model to render JSON.
 
 # Databases
-   - `maindb` is the MySQL database used with SQLAlchemy to save records.
+   - `maindb` is the
+     [MySQL](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/mysql) database used with SQLAlchemy to save records.
    - `Dockerfile` contains the settings for user credentials
    - `mysql/schema/schema.sql` contains the initial migration to create
      when `docker-compose build` is run.
@@ -60,7 +63,8 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
    [Celery](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/celery-queue) tasks for better performance.
  - Make MySQL connection configurable from cfg file.
  - Add more configurability for IPs/ports 
- - Add better migrations for MySQL using SQLAlchemy.
+ - Add better migrations for
+   [MySQL](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/mysql) using SQLAlchemy.
  - Add more
    [Celery](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/celery-queue) tasks and outsource the logic from endpoints into tasks.
 
