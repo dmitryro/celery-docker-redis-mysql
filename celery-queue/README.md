@@ -3,7 +3,7 @@
 # Tasks
  - tasks.py is the file.
  - `anagram` task - this is where we actually compute the anagram
- - `read_anagram` task - just a stub, not implemented. More tasks
+ - `read` task - just a stub, not implemented. More tasks
     will be added as logic is migrated from Flask endpoints into tasks.
 
 # Broker
