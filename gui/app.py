@@ -1,4 +1,3 @@
-from flask import Flask
 from flask import url_for
 from flask_bootstrap import Bootstrap
 from flask import Flask, render_template, request
@@ -12,8 +11,7 @@ Bootstrap(app)
 @app.route('/')
 @app.route('/home')
 def home():
-    user = "User"
-    return render_template('index.html', user=user)
+    return render_template('index.html')
 
 
 
