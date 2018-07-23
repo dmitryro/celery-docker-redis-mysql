@@ -11,7 +11,7 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
 
 
 
-# Static files
+# RESTful Endpoints
 
 `API` is a Flask application running using Gunicorn. 
 
@@ -31,17 +31,21 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
    `/delete/<int:id>`
        Take a record id and remove it from MySQL database.
 
-Models:
+# Models
+
    - file `models.py`
    - Models used: Record model to save 2 words, result of validations,
      time processed.
    
-Marchmallow schemas:
+# Marchmallow 
+   Marchmallow is a Python module alowwing to serialize data into JSON
+   It uses schemas defined based on fields that need to be rendered - 
+   here we use it with Record model and construct schema out of model.
+
    = file `models.py`
    - Schemas: RecordSchema created out of Record model to render JSON.
 
-
-Databases: 
+# Databases
    - `maindb` is the MySQL database used with SQLAlchemy to save records.
    - `Dockerfile` contains the settings for user credentials
    - `schemas/schema.sql` contains the initial migration to create
