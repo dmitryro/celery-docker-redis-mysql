@@ -31,6 +31,9 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
    `/delete/<int:id>`
        Take a record id and remove it from MySQL database.
 
+   `/check/<string:task_id>`
+       Provide a task ID and read task status - helper endpoint.
+
 # Models
 
    - file `models.py`
@@ -56,3 +59,6 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
  - Add caching and optimize Celery tasks for better performance.
  - Make MySQL connection configurable from cfg file.
  - Add more configurability for IPs/ports 
+ - Add better migrations for MySQL using SQLAlchemy.
+ - Add more Celery tasks and outsource the logic from endpoints into tasks.
+
