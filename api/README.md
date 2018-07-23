@@ -38,11 +38,11 @@ and open browser at 0.0.0.0:5000 or use Postman or curl to hit.
      time processed.
    
 # Marchmallow 
-   Marchmallow is a Python module alowwing to serialize data into JSON
+   Marchmallow is a Python module alowing to serialize data into JSON
    It uses schemas defined based on fields that need to be rendered - 
    here we use it with Record model and construct schema out of model.
 
-   = file `models.py`
+   - file `models.py`
    - Schemas: RecordSchema created out of Record model to render JSON.
 
 # Databases
