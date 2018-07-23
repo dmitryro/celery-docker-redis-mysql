@@ -50,7 +50,7 @@ See the API README file at [API](https://github.com/dmitryro/celery-docker-redis
 
 See the MySQL README file at [MySQL](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/mysql).
 
-See the Celery README file at [Celery](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/celery).
+See the Celery README file at [Celery](https://github.com/dmitryro/celery-docker-redis-mysql/tree/master/celery-queue).
 
 
 adapted from [https://github.com/itsrifat/flask-celery-docker-scale](https://github.com/itsrifat/flask-celery-docker-scale)
