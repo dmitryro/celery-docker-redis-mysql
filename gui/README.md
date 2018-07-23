@@ -27,7 +27,8 @@ This will expose the Flask application's endpoints on port `5000` as well as a
 flower server for monitoring workers on port `5555`
 
 ### TODO
-Add support for webpack, yarn, npm to use with Vue2
-Add asset compression.
-Add configurable IP and port options for GUI.
-Add more CRUD operations - removing items, updating.
+- Add support for `webpack`, `yarn`, `npm` to use with `Vue`.
+- Add asset compression.
+- Add more configuration options for assets.
+- Add configurable IP and port options for GUI.
+- Add more CRUD operations - removing items, updating.
